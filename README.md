@@ -1,27 +1,60 @@
-# Data, ML & AI Engineering Handbook
+<div align="center">
 
-A reference for data and machine learning engineering, from a raw CSV to production systems: the mathematics, the code and the judgement in between.
+<br>
+
+# Data, ML &amp; AI Engineering Handbook
+
+**From a raw CSV to production systems: the mathematics, the code, and the judgement in between.**
+
+<sub>33 chapters &nbsp;·&nbsp; 175 pages &nbsp;·&nbsp; 881 derived formulas &nbsp;·&nbsp; 95 figures &nbsp;·&nbsp; 61 executed code listings</sub>
+
+<br><br>
 
 [![CI](https://img.shields.io/github/actions/workflow/status/T31SHA/data-ml-handbook/ci.yml?branch=main&label=ci&style=flat-square&color=555555)](https://github.com/T31SHA/data-ml-handbook/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/T31SHA/data-ml-handbook?label=release&style=flat-square&color=555555)](https://github.com/T31SHA/data-ml-handbook/releases/latest)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-555555?style=flat-square)](LICENSE)
 [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-555555?style=flat-square)](LICENSE-CONTENT)
+[![Stars](https://img.shields.io/github/stars/T31SHA/data-ml-handbook?style=social)](https://github.com/T31SHA/data-ml-handbook/stargazers)
 
-[Read online](https://t31sha.github.io/data-ml-handbook/) · [Download the PDF](https://github.com/T31SHA/data-ml-handbook/releases/latest) · [Notebooks](notebooks/) · [Contributing](CONTRIBUTING.md)
+**[Read online](https://t31sha.github.io/data-ml-handbook/)** &nbsp;&nbsp;|&nbsp;&nbsp; **[Download the PDF](https://github.com/T31SHA/data-ml-handbook/releases/latest)** &nbsp;&nbsp;|&nbsp;&nbsp; **[Open the notebooks](notebooks/)**
 
-## About
+<br>
 
-Most references give either the theory or the code. Each topic here follows the same sequence: intuition, mathematics with derivations, a worked numeric example, runnable code with its real output, guidance on when to use it, and common pitfalls.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)&nbsp;![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)&nbsp;![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)&nbsp;![Polars](https://img.shields.io/badge/Polars-CD792C?style=for-the-badge&logo=polars&logoColor=white)&nbsp;![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)&nbsp;![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)&nbsp;![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)&nbsp;![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)&nbsp;![SQL](https://img.shields.io/badge/SQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)&nbsp;![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)&nbsp;![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white)&nbsp;![MkDocs Material](https://img.shields.io/badge/MkDocs%20Material-526CFE?style=for-the-badge&logo=materialformkdocs&logoColor=white)&nbsp;![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-| Item | Detail |
+<br><br>
+
+</div>
+
+---
+
+## Why this handbook
+
+Most references give you either the theory or the code. This one gives you both, in the same order every time: **intuition, derivation, a worked numeric example, runnable code with its real output, when to use it, and where it breaks.** It is written to be read cover to cover, kept open beside an editor, and trusted in an interview.
+
+<table>
+<tr>
+<td width="25%" valign="top"><b>Derived, not asserted</b><br><sub>Every key result is worked through step by step, from linear algebra to DPO.</sub></td>
+<td width="25%" valign="top"><b>Code that actually ran</b><br><sub>Every printed output comes from a real execution and is re-checked in CI.</sub></td>
+<td width="25%" valign="top"><b>Built for production</b><br><sub>Monitoring, drift, data modeling, distributed systems and debugging playbooks.</sub></td>
+<td width="25%" valign="top"><b>Interview ready</b><br><sub>Problem sets with full solutions across probability, statistics, ML, SQL and design.</sub></td>
+</tr>
+</table>
+
+| Area | What you get |
 |---|---|
-| Scope | 33 chapters, 175 pages: Python data stack, mathematics, statistics, Bayesian inference, experimentation, causal inference, classical and deep learning, LLM engineering and fine-tuning, forecasting, recommender systems, SQL, data modeling, distributed systems, MLOps and monitoring |
-| Mathematics | 881 typeset formulas with derivations |
-| Figures | 95 figures, all regenerable from `figures/src/` |
-| Code | 61 executed listings; outputs printed in the book come from real runs and are checked in CI |
-| Reference | decision flowcharts, debugging playbooks, interview problem sets, glossary and index |
+| Foundations | Python data stack, linear algebra, calculus, probability, information theory |
+| Statistics | Inference, Bayesian methods and MCMC, A/B testing at scale, causal inference |
+| Machine learning | Classical ML, evaluation and tuning, deep learning, CNNs, RNNs, Transformers |
+| AI and LLMs | LLM engineering, fine-tuning (SFT, DPO), retrieval and RAG evaluation, applied AI |
+| Data engineering | SQL, dimensional modeling, Spark, Kafka, Airflow, dbt, distributed systems |
+| Production | MLOps, monitoring and drift, debugging playbooks, platform toolbox |
+
+---
 
 ## Contents
+
+<sub>Thirty-three chapters in reading order. Chapters with a Colab link have a runnable notebook.</sub>
 
 | # | Chapter | Read |
 |---|---|---|
@@ -58,6 +91,8 @@ Most references give either the theory or the code. Each topic here follows the 
 | 30 | [Decision Flowcharts](content/21_decisions.md) | [Docs](https://t31sha.github.io/data-ml-handbook/handbook/21_decisions/) |
 | 31 | [Reference: Formula Sheet, Interview Bank & Glossary](content/22_reference.md) | [Docs](https://t31sha.github.io/data-ml-handbook/handbook/22_reference/) |
 | 32 | [Interview Problem Sets with Solutions](content/22b_problem_sets.md) | [Docs](https://t31sha.github.io/data-ml-handbook/handbook/22b_problem_sets/) |
+
+---
 
 ## Quickstart
 
@@ -100,6 +135,14 @@ docs/         MkDocs Material site (handbook pages are generated from content/)
 tests/        pytest suite that executes every snippet and checks every include
 ```
 
+---
+
+## Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=T31SHA/data-ml-handbook&type=Date)](https://star-history.com/#T31SHA/data-ml-handbook&Date)
+
+---
+
 ## Contributing
 
 Found an error, a clearer derivation, or a missing topic? Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md),
@@ -125,4 +168,4 @@ Code (`code/`, `build/`, `figures/src/`, `tests/`) is [MIT](LICENSE). Written co
 
 ---
 
-Sharahbil Mohamed Abdi · Data/ML Engineer · [@T31SHA](https://github.com/T31SHA)
+<div align="center"><sub>Written and maintained by <b>Sharahbil Mohamed Abdi</b>, Data/ML Engineer &nbsp;·&nbsp; <a href="https://github.com/T31SHA">@T31SHA</a><br>If it helped you, a star helps others find it.</sub></div>
