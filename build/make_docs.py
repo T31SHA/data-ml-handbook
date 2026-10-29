@@ -14,4 +14,8 @@ for p in sorted(glob.glob("content/*.md")):
                  f"(https://colab.research.google.com/github/T31SHA/data-ml-handbook/blob/main/notebooks/{nb}.ipynb)")
         s = re.sub(r"^(# .*)$", r"\1\n\n" + badge.replace("\\", "\\\\"), s, count=1, flags=re.M)
     open(os.path.join(out, os.path.basename(p)), "w").write(s)
+nav = re.findall(r'^\s+- "(\d\d) · (.+)": handbook/(\S+)\.md$', open("mkdocs.yml").read(), re.M)
+idx = ["# Contents", "", "All chapters in reading order.", "", "| # | Chapter |", "|---|---|"]
+idx += [f"| {n} | [{t}]({f}.md) |" for n, t, f in nav]
+open(os.path.join(out, "index.md"), "w").write("\n".join(idx) + "\n")
 print("docs generated:", len(os.listdir(out)), "pages")

@@ -47,6 +47,7 @@ extra:
 nav:
   - Home: index.md
   - Handbook:
+      - "Contents": handbook/index.md
       - "00 · How to Use This Guide": handbook/00_orientation.md
       - "01 · Python, NumPy, pandas, Polars & DuckDB": handbook/01_python.md
       - "02 · From CSV to Model: The Workflow": handbook/02_workflow.md
