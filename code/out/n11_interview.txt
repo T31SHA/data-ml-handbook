@@ -1,0 +1,3 @@
+reservoir inclusion prob (expect 0.25): [0.256 0.251 0.25  0.252 0.247 0.25  0.252 0.246] ...
+welford var=1.0018  numpy var=1.0018  naive E[x^2]-E[x]^2=0.0
+AUC sklearn=0.7148  pairwise=0.7148

@@ -80,7 +80,7 @@ for i,(p,src,mstore) in enumerate(docs,1):
         return f'<div class="mathd">{img}</div>' if dp else img
     h=re.sub(r"<p>MJX(D)(\d+)X</p>",mrep,h); h=re.sub(r"MJX([DI])(\d+)X",mrep,h)
     h=h.replace("§DOLLAR§","$")
-    h=re.sub(r"<th>(.*?)</th>",lambda m:"<th>"+re.sub(r'src="(build/\.cache/math/[0-9a-f]+)\.svg"',r'src="\1_w.svg"',m.group(1))+"</th>",h,flags=re.S)
+    if False: h=re.sub(r"<th>(.*?)</th>",lambda m:"<th>"+re.sub(r'src="(build/\.cache/math/[0-9a-f]+)\.svg"',r'src="\1_w.svg"',m.group(1))+"</th>",h,flags=re.S)
     title=re.search(r"<h1>(.*?)</h1>",h).group(1); sid=f"s{i}"
     tag=""
     mt=re.search(r"<p>tagline: (.*?)</p>",h)
@@ -144,7 +144,7 @@ if os.path.exists(B+"index_terms.txt"):
     idx_html=f'<section class="index" style="--c:#0F172A"><div class="ihead"><h1 id="index">Index</h1><p>Page references point to the subsection where each term is defined or used.</p></div><ul class="ilist">{li}</ul></section>'
     toc+='<li class="t1"><a href="#index"><span class="dot" style="background:#0F172A"></span>Index</a></li>'
 
-css=HtmlFormatter(style="friendly").get_style_defs(".hl")
+css=HtmlFormatter(style="friendly_grayscale").get_style_defs(".hl")
 tpl=open(B+"style.css").read()
 cover=open(B+"cover.html").read()
 doc=f"""<html lang="en"><head><meta charset="utf-8"><style>{tpl}\n{css}</style></head><body>

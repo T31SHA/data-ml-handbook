@@ -56,18 +56,28 @@ nav:
       - "06 · Calculus & Optimisation": handbook/06_calculus.md
       - "07 · Probability, Information Theory & Discrete Maths": handbook/07_probability.md
       - "08 · Statistics, Experimentation & Causal Inference": handbook/08_statistics.md
-      - "09 · Classical Machine Learning": handbook/09_classical_ml.md
-      - "10 · Evaluation, Validation & Tuning": handbook/10_evaluation.md
-      - "11 · Deep Learning Foundations": handbook/11_deep_learning.md
-      - "12 · Architectures: CNNs, RNNs, Transformers": handbook/12_architectures.md
-      - "13 · LLM Engineering": handbook/13_llm_engineering.md
-      - "14 · Applied AI: Vision, Generative, RL, RecSys, Time Series, Anomalies, Fairness": handbook/14_applied_ai.md
-      - "15 · SQL for Analytics & Engineering": handbook/15_sql.md
-      - "16 · Data Engineering Foundations": handbook/16_data_engineering.md
-      - "17 · Spark, Kafka, Airflow & dbt": handbook/17_big_data_tools.md
-      - "18 · MLOps & Production ML System Design": handbook/18_mlops.md
-      - "19 · Debugging Playbooks": handbook/19_debugging.md
-      - "20 · Platform Toolbox: Git, Docker, Kubernetes, Cloud, Linux": handbook/20_platform.md
-      - "21 · Decision Flowcharts": handbook/21_decisions.md
-      - "22 · Reference: Formula Sheet, Interview Bank & Glossary": handbook/22_reference.md
+      - "09 · Bayesian Inference in Practice": handbook/08b_bayesian.md
+      - "10 · Experimentation and A/B Testing at Scale": handbook/08c_experimentation.md
+      - "11 · Causal Inference in Practice": handbook/08d_causal.md
+      - "12 · Classical Machine Learning": handbook/09_classical_ml.md
+      - "13 · Evaluation, Validation & Tuning": handbook/10_evaluation.md
+      - "14 · Deep Learning Foundations": handbook/11_deep_learning.md
+      - "15 · Architectures: CNNs, RNNs, Transformers": handbook/12_architectures.md
+      - "16 · LLM Engineering": handbook/13_llm_engineering.md
+      - "17 · LLM Fine-Tuning, Evaluation and Retrieval in Depth": handbook/13b_llm_adaptation.md
+      - "18 · Applied AI: Vision, Generative, RL, RecSys, Time Series, Anomalies, Fairness": handbook/14_applied_ai.md
+      - "19 · Time Series Forecasting in Depth": handbook/14b_time_series.md
+      - "20 · Recommender Systems in Depth": handbook/14c_recsys.md
+      - "21 · SQL for Analytics & Engineering": handbook/15_sql.md
+      - "22 · Data Engineering Foundations": handbook/16_data_engineering.md
+      - "23 · Data Modeling for Analytics": handbook/16b_data_modeling.md
+      - "24 · Spark, Kafka, Airflow & dbt": handbook/17_big_data_tools.md
+      - "25 · Distributed Data Systems": handbook/17b_distributed.md
+      - "26 · MLOps & Production ML System Design": handbook/18_mlops.md
+      - "27 · ML Monitoring and Reliability": handbook/18b_monitoring.md
+      - "28 · Debugging Playbooks": handbook/19_debugging.md
+      - "29 · Platform Toolbox: Git, Docker, Kubernetes, Cloud, Linux": handbook/20_platform.md
+      - "30 · Decision Flowcharts": handbook/21_decisions.md
+      - "31 · Reference: Formula Sheet, Interview Bank & Glossary": handbook/22_reference.md
+      - "32 · Interview Problem Sets with Solutions": handbook/22b_problem_sets.md
   - Download PDF: https://github.com/T31SHA/data-ml-handbook/releases/latest

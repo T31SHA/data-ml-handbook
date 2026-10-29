@@ -1,0 +1,3 @@
+hash partitioning: max/mean load = 4.52  (job time is set by the slowest partition)
+salted hot keys  : max/mean load = 1.93
+keys moved adding 11th node: consistent hashing=8.1%  mod-N=90.5%

@@ -1,0 +1,5 @@
+how does lora fine tuning work             top=['d1', 'd5', 'd2'] rank_of_relevant=1
+why is decoding fast with cache            top=['d2', 'd1', 'd3'] rank_of_relevant=1
+preference tuning without reward model     top=['d5', 'd1', 'd2'] rank_of_relevant=1
+reduce memory of weights                   top=['d3', 'd1', 'd2'] rank_of_relevant=1
+MRR=1.000  Recall@3=1.00
