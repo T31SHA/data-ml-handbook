@@ -1,0 +1,5 @@
+(20790, 10)
+   MedInc  HouseAge  AveRooms  AveBedrms  Population  AveOccup  Latitude  Longitude  MedHouseVal  region
+0    8.33      41.0      6.98       1.02       322.0      2.56     37.88    -122.23         4.53  NorCal
+1    8.30      21.0      6.24       0.97      2401.0      2.11     37.86    -122.22         3.58  NorCal
+2    7.26      52.0      8.29       1.07       496.0      2.80     37.85    -122.24         3.52  NorCal

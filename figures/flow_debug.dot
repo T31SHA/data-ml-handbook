@@ -1,0 +1,29 @@
+digraph G { graph [rankdir=TB, nodesep=0.25, ranksep=0.32, fontname="Fira Sans", bgcolor="white", pad=0.15];
+node [fontname="Fira Sans", fontsize=12, style="filled,rounded", shape=box, penwidth=1.4, margin="0.12,0.06"];
+edge [fontname="Fira Sans", fontsize=10.5, color="#0F172A", fontcolor="#334155", arrowsize=0.7, penwidth=1.1];
+graph [rankdir=LR, ranksep=0.45, nodesep=0.12];
+graph [rankdir=LR, nodesep=0.18, ranksep=0.35];
+q0 [label="Loss at step 0\n≈ ln(C)?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a0 [label="No → check labels, init, output layer / loss pairing (pass logits!)", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+q0->a0;
+q1 [label="Can it overfit\none batch?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a1 [label="No → bug: zero_grad, wrong loss, frozen params, detached graph, LR", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+q1->a1;
+q2 [label="Loss NaN / inf?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a2 [label="Yes → lower LR, grad clipping, check inputs, log(0), fp16 → bf16", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+q2->a2;
+q3 [label="Train loss\nfalls slowly?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a3 [label="LR finder; AdamW 3e-4; normalise inputs; add norm layers; better init", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+q3->a3;
+q4 [label="Train ↓ but\nval flat / ↑?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a4 [label="Overfitting → augment, dropout, weight decay, early stop, more data", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+q4->a4;
+q5 [label="Both plateau high?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a5 [label="Underfitting → bigger model, train longer, better features, less regularisation", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+q5->a5;
+q6 [label="Val score\nsuspiciously high?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+a6 [label="Leakage → duplicates, future info, preprocessing fit on all data", fillcolor="#7C3AED", color="#7C3AED", fontcolor="white"];
+q6->a6;
+{rank=same; q0 q1 q2 q3 q4 q5 q6}
+q0->q1 [style=dashed, color="#94A3B8"]; q1->q2 [style=dashed, color="#94A3B8"]; q2->q3 [style=dashed, color="#94A3B8"]; q3->q4 [style=dashed, color="#94A3B8"]; q4->q5 [style=dashed, color="#94A3B8"]; q5->q6 [style=dashed, color="#94A3B8"];
+}

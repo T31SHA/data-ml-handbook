@@ -1,0 +1,26 @@
+shape: (20790, 10) | duplicates: 150
+missing %:
+ MedInc      2.97
+HouseAge    1.03
+region labels: ['Central', 'NorCal', 'SoCal-Coast', 'SoCal-Inland', 'central ', 'norcal ', 'socal-coast ', 
+    'socal-inland ']
+                mean      std     min      50%       max
+MedInc          3.87     1.90    0.50     3.53     15.00
+HouseAge       28.66    12.57    1.00    29.00     52.00
+AveRooms        5.43     2.47    0.85     5.23    141.91
+AveBedrms       1.10     0.47    0.33     1.05     34.07
+Population   1425.45  1131.08    3.00  1167.00  35682.00
+AveOccup        3.07    10.35    0.69     2.82   1243.33
+Latitude       35.63     2.14   32.54    34.26     41.95
+Longitude    -119.57     2.00 -124.35  -118.50   -114.31
+MedHouseVal     2.07     1.15    0.15     1.80      5.00
+target capped at 5.0 (= $500k): 0.048
+corr with target:
+ Latitude     -0.144
+AveBedrms    -0.047
+Longitude    -0.046
+Population   -0.024
+AveOccup     -0.024
+HouseAge      0.106
+AveRooms      0.152
+MedInc        0.687

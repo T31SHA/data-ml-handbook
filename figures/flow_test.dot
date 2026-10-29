@@ -1,0 +1,34 @@
+digraph G { graph [rankdir=TB, nodesep=0.25, ranksep=0.32, fontname="Fira Sans", bgcolor="white", pad=0.15];
+node [fontname="Fira Sans", fontsize=12, style="filled,rounded", shape=box, penwidth=1.4, margin="0.12,0.06"];
+edge [fontname="Fira Sans", fontsize=10.5, color="#0F172A", fontcolor="#334155", arrowsize=0.7, penwidth=1.1];
+graph [rankdir=LR, ranksep=0.45, nodesep=0.12];
+y [label="Outcome
+type?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+g [label="How many
+groups?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+p [label="Paired?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+cmp [label="Comparing?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+n3 [label="Factors?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+pt [label="Paired t-test
+(non-param: Wilcoxon signed-rank)", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+wt [label="Welch t-test
+(non-param: Mann-Whitney U)", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+an [label="One-way ANOVA → Tukey HSD
+(non-param: Kruskal-Wallis)", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+an2 [label="Two-way ANOVA /
+linear model with interactions", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+cor [label="Pearson r (linear) / Spearman ρ
+→ regression with CIs", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+z [label="Two-proportion z-test
+(A/B conversion)", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+mc [label="McNemar (paired binary)", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+chi [label="χ² independence
+(Fisher exact if expected < 5)", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+gof [label="χ² goodness of fit", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+pois [label="Poisson / negative-binomial
+regression (counts, rates)", fillcolor="#0284C7", color="#0284C7", fontcolor="white"];
+y->g [label="numeric"]; y->cmp [label="categorical"]; y->pois [label="counts"];
+g->p [label="2"]; g->n3 [label="≥ 3"]; g->cor [label="2 numeric
+variables"]; p->pt [label="yes"]; p->wt [label="no"]; n3->an [label="1"]; n3->an2 [label="2+"];
+cmp->z [label="2 proportions"]; cmp->mc [label="paired"]; cmp->chi [label="r×c table"]; cmp->gof [label="vs expected"];
+}

@@ -1,0 +1,5 @@
+Welch t=-3.09 p=0.0030  Cohen's d=0.66
+Mann-Whitney p = 0.0119
+chi2=0.16 dof=1 p=0.693
+ANOVA F=12.94 p=0.00001
+median 18.78, 95% bootstrap CI [16.10, 21.37]

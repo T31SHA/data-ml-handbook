@@ -1,0 +1,4 @@
+epoch  0 loss=0.758 val_loss=0.408 val_acc=0.870
+epoch  5 loss=0.178 val_loss=0.185 val_acc=0.911
+epoch 10 loss=0.151 val_loss=0.187 val_acc=0.914
+stopped after 11 epochs, best val_loss=0.185, params=1667

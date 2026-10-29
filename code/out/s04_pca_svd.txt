@@ -1,0 +1,5 @@
+eig of covariance  : [4.2282 0.2427 0.0782 0.0238]
+S² / (n−1) from SVD: [4.2282 0.2427 0.0782 0.0238]
+sklearn explained  : [4.2282 0.2427 0.0782 0.0238]
+explained ratio    : [0.925 0.053 0.017 0.005] -> 2 PCs keep 0.978
+same directions (|cos|): 1.0

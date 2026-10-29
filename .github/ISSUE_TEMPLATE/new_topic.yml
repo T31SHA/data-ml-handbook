@@ -1,0 +1,19 @@
+name: ✨ New topic / section
+description: Propose a topic, card, figure, or flowchart to add.
+labels: [enhancement]
+body:
+  - type: input
+    id: topic
+    attributes: { label: Topic }
+    validations: { required: true }
+  - type: dropdown
+    id: section
+    attributes:
+      label: Fits in section
+      options: [New section, 01 Python, 02 Workflow, 05-08 Math & Stats, 09-10 Classical ML, 11-14 Deep Learning & AI, 15-17 SQL & Data Engineering, 18-20 MLOps & Platform, 21-22 Decisions & Reference]
+  - type: textarea
+    id: outline
+    attributes: { label: Outline, description: "Intuition, math, example, code, pitfalls you'd cover." }
+  - type: checkboxes
+    id: own
+    attributes: { label: Contribution, options: [{ label: "I'd like to write this myself" }] }

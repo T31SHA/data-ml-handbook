@@ -1,0 +1,2 @@
+loss=1.0235  dW1[2,1] analytic=0.03632940 numeric=0.03632940
+matches PyTorch autograd: True True

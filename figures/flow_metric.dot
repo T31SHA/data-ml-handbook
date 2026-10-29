@@ -1,0 +1,33 @@
+digraph G { graph [rankdir=TB, nodesep=0.25, ranksep=0.32, fontname="Fira Sans", bgcolor="white", pad=0.15];
+node [fontname="Fira Sans", fontsize=12, style="filled,rounded", shape=box, penwidth=1.4, margin="0.12,0.06"];
+edge [fontname="Fira Sans", fontsize=10.5, color="#0F172A", fontcolor="#334155", arrowsize=0.7, penwidth=1.1];
+graph [rankdir=LR, ranksep=0.45, nodesep=0.12];
+t [label="Task?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+bal [label="Classes
+balanced?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+cal [label="Need calibrated
+probabilities?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+out [label="Large errors
+very costly?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+scale [label="Many scales /
+relative error?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+acc [label="Accuracy, macro-F1, ROC-AUC", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+pr [label="PR-AUC (AP), recall @ precision ≥ p,
+F-beta", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+ll [label="Log-loss, Brier score,
+reliability diagram", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+rmse [label="RMSE", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+mae [label="MAE / median AE (robust)", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+mape [label="WAPE, MASE, RMSLE
+(MAPE only if y never ≈ 0)", fillcolor="#0284C7", color="#0284C7", fontcolor="white"];
+r2 [label="Also report R² for
+explained variance", fillcolor="#475569", color="#475569", fontcolor="white"];
+rank [label="NDCG@k, MAP@k, recall@k, MRR
+online: CTR, retention", fillcolor="#7C3AED", color="#7C3AED", fontcolor="white"];
+thr [label="Pick threshold from cost matrix:
+min C_FP·FP + C_FN·FN", fillcolor="#475569", color="#475569", fontcolor="white"];
+t->bal [label="classification"]; t->out [label="regression"]; t->rank [label="ranking /
+recsys"];
+bal->acc [label="yes"]; bal->cal [label="no"]; cal->ll [label="yes"]; cal->pr [label="no / ranking"]; pr->thr; acc->thr;
+out->rmse [label="yes"]; out->scale [label="no"]; scale->mape [label="yes"]; scale->mae [label="no"]; rmse->r2; mae->r2;
+}

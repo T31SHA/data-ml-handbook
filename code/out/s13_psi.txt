@@ -1,0 +1,4 @@
+same distribution  PSI=0.001 -> stable
+mean +2            PSI=0.037 -> stable
+mean +5, wider     PSI=0.245 -> moderate
+KS test p (mean +2): 9.1e-96  <- tiny p at large n: use an effect size (PSI) too

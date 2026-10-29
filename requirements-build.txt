@@ -1,0 +1,6 @@
+# PDF + docs toolchain
+markdown>=3.6
+pygments>=2.17
+weasyprint>=62
+mkdocs-material>=9.5
+pymdown-extensions>=10.8

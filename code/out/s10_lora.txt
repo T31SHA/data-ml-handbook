@@ -1,0 +1,2 @@
+identical at init: True
+trainable 16,384 of 1,065,984 (1.54%)

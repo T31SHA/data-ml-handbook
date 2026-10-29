@@ -1,0 +1,10 @@
+k=2 inertia=    5331 silhouette=0.461
+k=3 inertia=    3363 silhouette=0.427
+k=4 inertia=    2309 silhouette=0.440
+k=5 inertia=    2027 silhouette=0.384
+k=6 inertia=    1785 silhouette=0.360
+GMM BIC best k = 3
+moons  k-means                ARI=0.255
+moons  agglomerative-single   ARI=1.000
+moons  DBSCAN eps=.2          ARI=1.000
+moons  HDBSCAN                ARI=1.000

@@ -1,0 +1,2 @@
+200 {'median_value_usd': 410959, 'model_version': 'lgbm-v1'}
+422 validation error -> Input should be greater than 0

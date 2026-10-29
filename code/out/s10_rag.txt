@@ -1,0 +1,10 @@
+'how long do refunds take'     -> [('d1', 0.206), ('d2', 0.0)]
+'delivery time to nairobi'     -> [('d2', 0.409), ('d1', 0.0)]
+'api limits'                   -> [('d3', 0.217), ('d1', 0.0)]
+recall@2=0.83  MRR=1.00
+Answer ONLY from the context and cite [ids]. If missing, say so.
+<context>
+[d1] Refunds are issued within 14 days of purchase if the item is unused.
+[d2] Shipping to Nairobi takes 3-5 business days; express is next day.
+</context>
+Q: how long do refunds take?

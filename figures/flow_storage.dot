@@ -1,0 +1,39 @@
+digraph G { graph [rankdir=TB, nodesep=0.25, ranksep=0.32, fontname="Fira Sans", bgcolor="white", pad=0.15];
+node [fontname="Fira Sans", fontsize=12, style="filled,rounded", shape=box, penwidth=1.4, margin="0.12,0.06"];
+edge [fontname="Fira Sans", fontsize=10.5, color="#0F172A", fontcolor="#334155", arrowsize=0.7, penwidth=1.1];
+graph [rankdir=LR, ranksep=0.45, nodesep=0.12];
+w [label="Workload?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+ap [label="Access
+pattern?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+sz [label="Data size?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+lat [label="Freshness
+needed?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+pg [label="PostgreSQL / MySQL
+(ACID, normalised)", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+kv [label="DynamoDB / Cassandra /
+Redis (key lookups at scale)", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+doc [label="MongoDB / Firestore
+(flexible documents)", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+duck [label="DuckDB / Polars on Parquet
+(single node)", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+wh [label="Warehouse: BigQuery / Snowflake /
+Redshift (SQL, managed)", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+lh [label="Lakehouse: Spark/Trino +
+Iceberg/Delta on object storage", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+fl [label="Kafka + Flink /
+Kafka Streams", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+ss [label="Spark Structured Streaming
+(micro-batch)", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+bt [label="Batch: Airflow + dbt / Spark
+(hourly / daily)", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+sp [label="Search: OpenSearch · Vectors: pgvector/Qdrant
+Graph: Neo4j · Time series: ClickHouse/Timescale", fillcolor="#475569", color="#475569", fontcolor="white"];
+w->pg [label="transactions"]; pg->ap; ap->kv [label="key-value,
+huge scale"]; ap->doc [label="flexible
+schema"];
+w->sz [label="analytics"]; sz->duck [label="< ~100 GB"]; sz->wh [label="TB+, SQL-first"]; sz->lh [label="TB–PB, ML +
+open formats"];
+w->lat [label="events"]; lat->fl [label="< 1 s"]; lat->ss [label="seconds–
+minutes"]; lat->bt [label="hours"]; w->sp [label="specialised
+queries"];
+}

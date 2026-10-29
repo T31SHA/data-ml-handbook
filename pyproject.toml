@@ -1,0 +1,17 @@
+[project]
+name = "data-ml-handbook"
+version = "1.0.0"
+description = "The elite open-source Data/ML/AI/Data-Engineering field guide: from raw CSV to production."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT (code) / CC-BY-4.0 (content)" }
+authors = [{ name = "Sharahbil Mohamed Abdi" }]
+keywords = ["machine-learning", "data-science", "deep-learning", "data-engineering", "statistics", "mlops", "llm"]
+
+[project.urls]
+Homepage = "https://t31sha.github.io/data-ml-handbook/"
+Repository = "https://github.com/T31SHA/data-ml-handbook"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,4 @@
+needed per arm for 10% -> 11%: 14,745  (rule of thumb 16·p(1−p)/δ² = 14,400)
+rates B=0.1090 A=0.1000  z=2.50 p=0.0126  diff 95% CI [0.0019, 0.0160]
+SRM check p = 0.087 (< 0.001 would mean broken randomisation)
+CUPED: variance 87.3 -> 24.7 (72% reduction)

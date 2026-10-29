@@ -1,0 +1,10 @@
+            model  ROC-AUC    std    sec
+ SVM RBF (scaled)   0.9962 0.0041 0.0268
+logistic (scaled)   0.9955 0.0056 0.0364
+          XGBoost   0.9945 0.0049 0.3781
+         hist GBM   0.9940 0.0053 0.6145
+         LightGBM   0.9935 0.0061 0.5354
+    random forest   0.9920 0.0073 3.2338
+      Gaussian NB   0.9885 0.0065 0.0148
+ kNN k=7 (scaled)   0.9823 0.0110 0.0447
+decision tree d=4   0.9207 0.0247 0.0290

@@ -1,0 +1,7 @@
+tags.mlflow.runName params.C  metrics.cv_auc
+       logreg_C=1.0      1.0          0.9925
+       logreg_C=1.0      1.0          0.9925
+       logreg_C=0.1      0.1          0.9912
+       logreg_C=0.1      0.1          0.9912
+      logreg_C=0.01     0.01          0.9909
+      logreg_C=0.01     0.01          0.9909

@@ -1,0 +1,6 @@
+params=1667  initial loss≈ln(3)=1.099
+epoch  0 train_loss=0.418 val_loss=0.362 val_acc=0.910
+epoch  5 train_loss=0.187 val_loss=0.171 val_acc=0.929
+epoch 10 train_loss=0.140 val_loss=0.189 val_acc=0.924
+early stop at epoch 12
+best val_loss=0.169

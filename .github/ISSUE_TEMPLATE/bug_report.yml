@@ -1,0 +1,15 @@
+name: 🐞 Bug (code / build)
+description: A snippet fails, the PDF or docs build breaks, or a figure script errors.
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes: { label: Where, description: "File or section, e.g. code/s09_torch.py or make pdf" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: Command, full error / traceback, expected behaviour. , render: text }
+    validations: { required: true }
+  - type: input
+    id: env
+    attributes: { label: Environment, placeholder: "OS, Python version, package versions" }

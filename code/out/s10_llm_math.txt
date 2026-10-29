@@ -1,0 +1,9 @@
+Llama-3-8B-like (32 layers, 8 KV heads (GQA), head_dim 128):
+  KV-cache @   8,192 tokens, batch 1, fp16:   1.07 GB
+  KV-cache @  32,768 tokens, batch 1, fp16:   4.29 GB
+  KV-cache @ 128,000 tokens, batch 1, fp16:  16.78 GB
+  weights at 16-bit:  16.0 GB
+  weights at  8-bit:   8.0 GB
+  weights at  4-bit:   4.0 GB
+LoRA r=16 on a 4096x4096 matrix: 131,072 trainable vs 16,777,216 (0.78%)
+cost per request ≈ USD 0.00069; per 1M requests ≈ USD 690

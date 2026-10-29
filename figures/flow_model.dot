@@ -1,0 +1,39 @@
+digraph G { graph [rankdir=TB, nodesep=0.25, ranksep=0.32, fontname="Fira Sans", bgcolor="white", pad=0.15];
+node [fontname="Fira Sans", fontsize=12, style="filled,rounded", shape=box, penwidth=1.4, margin="0.12,0.06"];
+edge [fontname="Fira Sans", fontsize=10.5, color="#0F172A", fontcolor="#334155", arrowsize=0.7, penwidth=1.1];
+graph [rankdir=LR, ranksep=0.45, nodesep=0.12];
+d [label="Data type?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+lab [label="Labels?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+interp [label="Must be
+interpretable?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+small [label="< 1k rows?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+tl [label="Labelled
+examples?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+mod [label="Modality?", shape=diamond, style=filled, fillcolor="#FFFBEB", color="#D97706", fontcolor="#0F172A", fontsize=11, margin="0.02,0.02"];
+clu [label="Clustering: k-means → HDBSCAN/GMM
+Anomalies: Isolation Forest", fillcolor="#475569", color="#475569", fontcolor="white"];
+lin [label="Logistic / linear + splines,
+EBM, shallow tree", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+reg [label="Regularised linear, RF, SVM
++ repeated CV", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+gbm [label="Gradient boosting (LightGBM /
+XGBoost / CatBoost) + early stop
+→ Optuna → feature eng.", fillcolor="#0D9488", color="#0D9488", fontcolor="white"];
+llm [label="LLM zero/few-shot, or
+embeddings + logistic", fillcolor="#7C3AED", color="#7C3AED", fontcolor="white"];
+bert [label="TF-IDF + logistic baseline →
+fine-tune BERT/DeBERTa (LoRA)", fillcolor="#DB2777", color="#DB2777", fontcolor="white"];
+cv [label="Pretrained CNN / ViT
+fine-tune + augmentation", fillcolor="#4F46E5", color="#4F46E5", fontcolor="white"];
+ts [label="Seasonal-naive → ETS/ARIMA →
+GBM on lags → N-BEATS/TFT", fillcolor="#D97706", color="#D97706", fontcolor="white"];
+rec [label="Popularity → item-item → MF/ALS
+→ two-tower + GBM ranker", fillcolor="#16A34A", color="#16A34A", fontcolor="white"];
+rl [label="Bandits (Thompson) → RL (PPO)", fillcolor="#0284C7", color="#0284C7", fontcolor="white"];
+d->lab [label="tabular"]; d->tl [label="text"]; d->mod [label="images / audio /
+signals"]; d->rec [label="user-item
+interactions"]; d->rl [label="sequential
+decisions"];
+lab->clu [label="no"]; lab->interp [label="yes"]; interp->lin [label="yes"]; interp->small [label="no"]; small->reg [label="yes"]; small->gbm [label="no"];
+tl->llm [label="< 1k"]; tl->bert [label="many"]; mod->cv [label="vision/audio"]; mod->ts [label="time series"];
+}

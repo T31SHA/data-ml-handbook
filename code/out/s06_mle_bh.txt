@@ -1,0 +1,5 @@
+numeric MLE μ=2.9597 σ=1.5204 | closed form μ=2.9597 σ=1.5204
+bonferroni: discoveries= 7  true=7  false=0
+holm      : discoveries= 7  true=7  false=0
+fdr_bh    : discoveries=10  true=10  false=0
+uncorrected: 14 discoveries, false = 4

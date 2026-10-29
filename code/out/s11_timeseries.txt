@@ -1,0 +1,3 @@
+seasonal naive (t-28)    MAE= 5.70  MASE=1.33
+LightGBM on raw y        MAE= 6.01  MASE=1.40
+LightGBM on y - level    MAE= 5.46  MASE=1.27

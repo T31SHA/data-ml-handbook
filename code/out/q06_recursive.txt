@@ -1,0 +1,7 @@
+ lvl  name                          path
+   1 Amina                         Amina
+   2 Brian                 Amina > Brian
+   3 Dalia         Amina > Brian > Dalia
+   4 Fatma Amina > Brian > Dalia > Fatma
+   3   Eli           Amina > Brian > Eli
+   2  Chao                  Amina > Chao

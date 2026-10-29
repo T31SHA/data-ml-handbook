@@ -1,0 +1,11 @@
+best CV RMSE: 0.4472
+best params: {'n_estimators': 1400, 'learning_rate': 0.0263, 'num_leaves': 70, 'min_child_samples': 12, 
+    'colsample_bytree': 0.6504, 'reg_lambda': 0.0131}
+TEST  RMSE=0.4253  MAE=0.2761  R²=0.8620
+=> typical error ≈ $27,608 per block group
+Latitude     0.624
+Longitude    0.607
+MedInc       0.260
+AveRooms     0.218
+AveOccup     0.179
+HouseAge     0.052

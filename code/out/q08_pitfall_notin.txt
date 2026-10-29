@@ -1,0 +1,3 @@
+    method  n
+    NOT IN  0
+NOT EXISTS  3

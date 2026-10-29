@@ -1,0 +1,4 @@
+P(disease | +) = 0.167
+stationary π: [0.46 0.3  0.24]  check πP = π: True
+after 50 steps from 'Sunny': [0.46 0.3  0.24]
+Monte Carlo π ≈ 3.141168 (error ~ 1/√N)

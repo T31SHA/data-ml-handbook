@@ -1,0 +1,5 @@
+dt
+2026-10-23    3
+2026-10-24    1 
+files: ['dt=2026-10-23/1ed1a96ec7bb435fb885378bab6372a8-0.parquet', 
+    'dt=2026-10-24/1ed386b5fd704e12afcf8d1b25b3b411-0.parquet']

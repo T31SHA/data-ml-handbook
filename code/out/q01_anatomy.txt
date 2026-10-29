@@ -1,0 +1,5 @@
+ region  n_orders   revenue
+Eldoret       484 1472057.0
+ Kisumu       488 1437106.0
+Mombasa       460 1355229.0
+Nairobi       473 1339193.0

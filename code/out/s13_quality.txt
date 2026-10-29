@@ -1,0 +1,6 @@
+  column                                 check failure_case
+order_id                      field_uniqueness            2
+order_id                      field_uniqueness            2
+  amount           greater_than_or_equal_to(0)         -5.0
+  status       isin(['new', 'paid', 'refund'])         PAID
+   email str_matches('^[^@\s]+@[^@\s]+\.\w+$')         nope

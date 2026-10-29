@@ -1,0 +1,9 @@
+ region     name   total  rnk  dense_rnk  pct_of_region
+Eldoret  cust_21 75851.0    1          1           3.24
+Eldoret cust_151 72608.0    2          2           3.10
+ Kisumu  cust_98 73759.0    1          1           3.14
+ Kisumu cust_166 73286.0    2          2           3.12
+Mombasa cust_159 78295.0    1          1           3.75
+Mombasa cust_178 66896.0    2          2           3.20
+Nairobi  cust_68 82644.0    1          1           3.86
+Nairobi  cust_94 70272.0    2          2           3.28

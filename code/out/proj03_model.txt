@@ -1,0 +1,6 @@
+               model  CV RMSE  ± std  CV R²
+     Baseline (mean)    1.156  0.024 -0.000
+               Ridge    0.690  0.034  0.643
+       Random forest    0.506  0.012  0.808
+HistGradientBoosting    0.461  0.009  0.841
+            LightGBM    0.449  0.012  0.849

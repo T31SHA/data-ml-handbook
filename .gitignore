@@ -1,0 +1,21 @@
+# build outputs
+dist/
+site/
+*.pdf
+build/.cache/
+build/mathjax/node_modules/
+node_modules/
+# generated docs sources
+docs/handbook/
+docs/figures/
+# snippet artefacts
+code/data/*
+!code/data/.gitkeep
+mlruns/
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store

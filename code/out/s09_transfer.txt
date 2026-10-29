@@ -1,0 +1,2 @@
+trainable 2,565 / 11,179,077 params (0.02%)
+logits shape: (2, 5)

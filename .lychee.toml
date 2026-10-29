@@ -1,0 +1,3 @@
+exclude = ["^https://colab.research.google.com", "^https://t31sha.github.io", "^https://github.com/T31SHA/data-ml-handbook/(releases|labels|actions|stargazers)", "^https://api.star-history.com", "^https://star-history.com", "^http://localhost"]
+max_retries = 3
+accept = [200, 206, 429]

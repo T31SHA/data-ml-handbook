@@ -1,0 +1,5 @@
+manual BCE on probabilities: nan
+BCEWithLogitsLoss (stable):  15.0
+lr=0.1: loss became inf at step 5 (grad norm before: inf)
+lr=1e-06: finite after 50 steps, loss=12298.6
+anomaly mode: Function 'SqrtBackward0' returned nan values in its 0th output.

@@ -1,0 +1,73 @@
+site_name: Data/ML Handbook — The Elite Field Guide
+site_description: From raw CSV to production — math, statistics, classical ML, deep learning, LLMs and data engineering.
+site_author: Sharahbil Mohamed Abdi
+site_url: https://t31sha.github.io/data-ml-handbook/
+repo_url: https://github.com/T31SHA/data-ml-handbook
+repo_name: T31SHA/data-ml-handbook
+edit_uri: edit/main/content/
+copyright: "© 2026 Sharahbil Mohamed Abdi · Data/ML Engineer — content CC BY 4.0, code MIT"
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: teal
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle: {icon: material/weather-sunny, name: Light mode}
+  font: {text: Fira Sans, code: IBM Plex Mono}
+  features: [navigation.instant, navigation.tracking, navigation.sections, navigation.top, navigation.footer,
+             toc.follow, search.suggest, search.highlight, content.code.copy, content.action.edit]
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes
+  - toc: {permalink: true}
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight: {anchor_linenums: true}
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex: {generic: true}
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/T31SHA
+nav:
+  - Home: index.md
+  - Handbook:
+      - "00 · How to Use This Guide": handbook/00_orientation.md
+      - "01 · Python, NumPy, pandas, Polars & DuckDB": handbook/01_python.md
+      - "02 · From CSV to Model: The Workflow": handbook/02_workflow.md
+      - "03 · Worked Project: California Housing, End to End": handbook/03_project.md
+      - "04 · Data Visualisation": handbook/04_viz.md
+      - "05 · Linear Algebra": handbook/05_linalg.md
+      - "06 · Calculus & Optimisation": handbook/06_calculus.md
+      - "07 · Probability, Information Theory & Discrete Maths": handbook/07_probability.md
+      - "08 · Statistics, Experimentation & Causal Inference": handbook/08_statistics.md
+      - "09 · Classical Machine Learning": handbook/09_classical_ml.md
+      - "10 · Evaluation, Validation & Tuning": handbook/10_evaluation.md
+      - "11 · Deep Learning Foundations": handbook/11_deep_learning.md
+      - "12 · Architectures: CNNs, RNNs, Transformers": handbook/12_architectures.md
+      - "13 · LLM Engineering": handbook/13_llm_engineering.md
+      - "14 · Applied AI: Vision, Generative, RL, RecSys, Time Series, Anomalies, Fairness": handbook/14_applied_ai.md
+      - "15 · SQL for Analytics & Engineering": handbook/15_sql.md
+      - "16 · Data Engineering Foundations": handbook/16_data_engineering.md
+      - "17 · Spark, Kafka, Airflow & dbt": handbook/17_big_data_tools.md
+      - "18 · MLOps & Production ML System Design": handbook/18_mlops.md
+      - "19 · Debugging Playbooks": handbook/19_debugging.md
+      - "20 · Platform Toolbox: Git, Docker, Kubernetes, Cloud, Linux": handbook/20_platform.md
+      - "21 · Decision Flowcharts": handbook/21_decisions.md
+      - "22 · Reference: Formula Sheet, Interview Bank & Glossary": handbook/22_reference.md
+  - Download PDF: https://github.com/T31SHA/data-ml-handbook/releases/latest

@@ -1,0 +1,4 @@
+normal eq: [ 0.999  1.975 -2.94 ] 
+lstsq    : [ 0.999  1.975 -2.94 ] 
+GD       : [ 0.999  1.975 -2.94 ]
+condition number of XᵀX: 1.26

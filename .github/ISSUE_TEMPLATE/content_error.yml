@@ -1,0 +1,15 @@
+name: 📐 Content error
+description: A wrong formula, misleading explanation, outdated API, or typo.
+labels: [content]
+body:
+  - type: input
+    id: loc
+    attributes: { label: Location, description: "Section file + heading (and PDF page if known)" }
+    validations: { required: true }
+  - type: textarea
+    id: issue
+    attributes: { label: What is wrong?, description: Quote the current text. }
+    validations: { required: true }
+  - type: textarea
+    id: fix
+    attributes: { label: Suggested correction, description: Include a source (paper, docs, textbook) if possible. }

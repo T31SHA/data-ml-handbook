@@ -1,0 +1,5 @@
+loop 91 ms vs vectorised 0.34 ms  -> 267x faster, same result: True
+broadcast (2,3)+(3,) ->
+ [[10 21 32]
+ [13 24 35]]
+standardise columns: [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]

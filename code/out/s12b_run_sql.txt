@@ -1,0 +1,9 @@
+q01_anatomy.sql rows: 4
+q02_dedup_latest.sql rows: 5
+q03_mom.sql rows: 6
+q04_topn_rank.sql rows: 8
+q05_islands.sql rows: 4
+q06_recursive.sql rows: 6
+q07_cohort.sql rows: 4
+q08_pitfall_notin.sql rows: 2
+q09_scd2.sql rows: 5

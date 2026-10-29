@@ -1,0 +1,209 @@
+A/B testing|A/B tests?|A/B testing
+Accuracy
+Activation functions|activations?
+Adam|Adam|AdamW
+Agents|agents?|ReAct
+Airflow
+ANOVA
+Anomaly detection|anomal(?:y|ies)
+Arrow (Apache)|Arrow
+Attention|attention
+AUC|ROC-AUC|AUC
+Autoencoder|autoencoders?
+Avro
+Backfill|backfills?
+Backpropagation|backprop(?:agation)?
+Bagging
+Batch normalisation|BatchNorm
+Bayes' theorem|Bayes(?:'s)? (?:rule|theorem)|Bayes
+Bayesian vs frequentist|Bayesian
+Benjamini–Hochberg|Benjamini.Hochberg|BH
+Bias–variance|bias.variance
+BM25
+Boosting|boosting
+Bootstrap|bootstrap
+BPE|BPE|byte.pair
+Broadcast join|broadcast
+Broadcasting (NumPy)|broadcasting
+Calibration|calibrat(?:ion|ed)
+CatBoost
+CDC|CDC|change data capture
+Central limit theorem|CLT|central limit
+Chi-squared test|χ²|chi.?squared?
+Chunking|chunk(?:ing|s)?
+Class imbalance|imbalanced?
+Clustering|cluster(?:ing)?
+CNN|CNNs?|convolution(?:al)?
+Cohort analysis|cohorts?
+Collider|colliders?
+Columnar storage|columnar
+Concept drift
+Confidence interval|confidence intervals?|CIs?
+Confounding|confound(?:er|ers|ing)
+Confusion matrix
+Context window|context windows?|long context
+Correlation|correlation
+Cosine similarity|cosine
+Cross-entropy|cross.entropy
+Cross-validation|cross.validation|K.fold|CV
+CUPED
+Curse of dimensionality
+Data contracts|data contracts?
+Data lake|data lakes?
+Data mesh
+Data quality|data quality
+Data warehouse|warehouses?
+DBSCAN|H?DBSCAN
+dbt
+Decision trees|decision trees?|CART
+Delta Lake|Delta
+Derivatives|derivatives?
+Difference-in-differences|difference.in.differences|DiD
+Diffusion models|diffusion
+Dimensional modelling|dimensional|Kimball
+Docker|Docker(?:file)?
+Dropout|dropout
+DuckDB
+Early stopping|early stop(?:ping)?
+Eigenvalues|eigen(?:values?|vectors?|decomposition)
+Embeddings|embeddings?
+Entropy|entropy
+ETL / ELT|ETL|ELT
+Experiment tracking|experiment tracking|MLflow
+Exploding gradients|explod(?:e|ing) gradients?
+F1 score|F1
+Fact table|fact tables?
+Fairness|fairness
+Feature engineering
+Feature importance|importance
+Feature store|feature stores?
+Fine-tuning|fine.tun(?:e|ing)
+FlashAttention
+Gaps and islands|islands
+Gaussian mixture|GMM|Gaussian mixture
+GELU
+Generative models|generative
+Git
+Gradient boosting|gradient boosting|GBMs?|LightGBM|XGBoost
+Gradient checking|gradient check
+Gradient clipping|clip(?:ping)?
+Gradient descent|gradient descent
+GQA|GQA|grouped.query
+Grain|grain
+Guardrails|guardrails?
+Hallucination|hallucinat(?:ion|es|ions)
+Hessian
+HNSW
+Hyperparameter tuning|hyperparameters?|Optuna
+Hypothesis testing|hypothesis test(?:ing|s)?
+Iceberg
+Idempotency|idempoten(?:t|cy)
+Information theory|information theory
+Initialisation|initiali[sz]ation|Kaiming|Xavier
+Instrumental variables|instrumental variables?|IV
+Isolation Forest
+Jacobian
+k-means
+k-nearest neighbours|kNN|nearest neighbou?rs
+Kafka
+KL divergence|KL
+Kubernetes
+KV-cache|KV.cache
+L1 / L2 regularisation|L1|L2|lasso|ridge
+Lakehouse|lakehouses?
+Layer normalisation|LayerNorm
+Leakage|leak(?:age|y)
+Learning curves|learning curves?
+Learning rate|learning rates?|LR
+Linear regression|linear regression|OLS
+LLM-as-judge|LLM.as.judge|judge
+Logistic regression|logistic
+LoRA|Q?LoRA
+LSTM|LSTMs?|GRU
+Markov chains|Markov
+Matrix factorisation|matrix factori[sz]ation|ALS
+Maximum likelihood|MLE|maximum likelihood
+Medallion architecture|medallion|bronze
+MERGE|MERGE
+Metrics (classification)|precision|recall
+Metrics (regression)|RMSE|MAE|MAPE
+Mixed precision|bf16|mixed precision
+Model registry|registry
+Monitoring|monitor(?:ing)?
+Multiple comparisons|multiple (?:comparisons|testing)
+Naive Bayes
+NaN loss|NaN
+NDCG
+Nested cross-validation|nested
+Normal distribution|normal distribution|Gaussian
+Normal equation|normal equation
+NULL handling|NULLs?
+NumPy
+One-hot encoding|one.hot
+Optimisers|optimi[sz]ers?
+Orchestration|orchestrat(?:ion|e)
+Overfitting|overfit(?:ting)?
+p-hacking|p.hacking
+p-value|p.values?
+Pandas|pandas
+Parquet
+Partitioning|partition(?:ing|s)?
+PCA
+Pipelines (sklearn)|Pipeline
+Polars
+Positional encoding|positional|RoPE
+Power analysis|power
+Precision–recall curve|PR.AUC|PR curve
+Probability distributions|distributions?
+Prompt engineering|prompt(?:ing)?
+Prompt injection
+Propensity score|propensity
+PSI|PSI
+PyTorch
+Quantization|quanti[sz](?:ation|ed|e)
+RAG|RAG|retrieval.augmented
+Random forest|random forests?
+Recommender systems|recommend(?:er|ers|ation|ations)
+Recursive CTE|recursive
+Regression discontinuity|discontinuity
+Regularisation|regulari[sz](?:ation|ed|e)
+Reinforcement learning|reinforcement|Q.learning
+Reproducibility|reproduc(?:ibility|ible)
+Reranking|rerank(?:ing|er)?
+Residual connections|residual
+RLHF|RLHF|DPO
+RNN|RNNs?
+Sampling (LLM)|top.p|temperature
+Sample size|sample size
+Scaling (features)|StandardScaler|scal(?:e|ing) features
+SCD Type 2|SCD|slowly changing
+Schema evolution|schema evolution|schema registry
+Serving|serving
+SHAP
+Shuffle (Spark)|shuffles?
+Sigmoid|sigmoid
+Simpson's paradox|Simpson
+Skew (data)|skew(?:ed)?
+Softmax|softmax
+Spark|Spark|PySpark
+SQL window functions|window functions?
+Star schema|star schema
+Statistical tests|t.test|Mann.Whitney|Wilcoxon
+Streaming|stream(?:ing)?
+SVD|SVD|singular value
+SVM|SVMs?|support vector
+t-SNE|t.SNE
+Taylor series|Taylor
+TensorFlow / Keras|TensorFlow|Keras
+Threshold tuning|threshold
+Time series|time series|forecast(?:ing)?
+Tokenization|tokeni[sz](?:ation|er|ers)|tokens?
+Training/serving skew|training.serving skew|skew
+Transfer learning|transfer learning
+Transformer|Transformers?
+UMAP
+Vanishing gradients|vanish(?:ing)?
+Vector database|vector (?:database|index|store)|pgvector|Qdrant
+Watermark|watermarks?
+Weight decay|weight decay
+Window functions|OVER \(

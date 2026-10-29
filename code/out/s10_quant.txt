@@ -1,0 +1,3 @@
+int8: relative RMS error = 0.0062
+int4: relative RMS error = 0.1153
+int3: relative RMS error = 0.2665

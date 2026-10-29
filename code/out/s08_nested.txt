@@ -1,0 +1,2 @@
+best inner-CV score (optimistic): 0.9789  params={'svc__C': 1, 'svc__gamma': 'scale'}
+nested CV estimate (unbiased):    0.9772 ± 0.0163

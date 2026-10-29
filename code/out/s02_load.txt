@@ -1,0 +1,4 @@
+default dtypes: 1.86 MB | tuned dtypes: 1.35 MB
+chunked aggregate over 2.1 MB file: 4,973,816
+CSV 2.12 MB -> Parquet 0.81 MB
+{'MedInc': dtype('float64'), 'region': <StringDtype(na_value=nan)>}

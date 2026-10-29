@@ -1,0 +1,4 @@
+TP=3 FP=1 FN=1 TN=5
+precision=0.750 (= 3/4)  recall=0.750 (= 3/4)  F1=0.750
+ROC-AUC=0.875  log-loss=0.436  Brier=0.144  MCC=0.583
+AUC as P(score_pos > score_neg) = 0.875
