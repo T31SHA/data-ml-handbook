@@ -1,0 +1,4 @@
+naive : lift=0.506 se=0.138  p=0.0002
+CUPED : lift=0.433 se=0.080  p=0.0000
+variance reduction = 66.4%  (theory 1-rho^2 = 66.4%)
+SRM chi2=6.26 p=0.0123 -> ok

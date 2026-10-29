@@ -12,7 +12,7 @@ Each chart encodes the default answer an experienced engineer would reach in und
 | B | Which metric should I optimise and report? | 10 Evaluation |
 | C | Which statistical test answers my question? | 08 Statistics |
 | D | Which storage / processing engine fits the workload? | 16–17 Data engineering |
-| E | Why is my model not training? (in section 19) | 19 Debugging |
+| E | Why is my model not training? (in section 28) | 28 Debugging |
 
 !!! rule "Rule of thumb: decisions you can reverse vs ones you can't"
     Model and metric choices are cheap to revisit: iterate fast. Storage engines, table formats, data contracts and event schemas are expensive to change later: spend the design time there.

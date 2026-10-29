@@ -1,0 +1,4 @@
+iter  5 train RMSE=0.516  test RMSE=0.690
+iter 10 train RMSE=0.504  test RMSE=0.678
+iter 15 train RMSE=0.502  test RMSE=0.677
+recall@10 = 0.318 over 283 users

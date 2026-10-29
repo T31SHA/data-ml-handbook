@@ -1,0 +1,3 @@
+naive difference in means : 2.586
+IPW                       : 1.997
+AIPW (doubly robust)      : 1.998 +/- 0.020

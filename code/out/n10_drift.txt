@@ -1,0 +1,4 @@
+same          PSI=0.002  KS=0.010 p=8.3e-01
+shift 0.25sd  PSI=0.073  KS=0.113 p=1.1e-44
+scale x1.5    PSI=0.213  KS=0.113 p=6.0e-45
+shift 1sd     PSI=0.924  KS=0.394 p=0.0e+00

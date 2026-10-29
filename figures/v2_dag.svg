@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="136.8pt" viewBox="0 0 460.8 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T14:47:03.152503</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 136.8 
+L 460.8 136.8 
+L 460.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 197.018437 36.6435 
+L 263.781563 36.6435 
+L 263.781563 18.0045 
+L 197.018437 18.0045 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.6; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'Source Serif Pro', 'DejaVu Serif', serif; text-anchor: middle" x="230.4" y="30.4785" transform="rotate(-0 230.4 30.4785)">X (confounder)</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_3">
+     <path d="M 59.4873 118.7955 
+L 118.8423 118.7955 
+L 118.8423 100.1565 
+L 59.4873 100.1565 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.6; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'Source Serif Pro', 'DejaVu Serif', serif; text-anchor: middle" x="89.1648" y="112.6305" transform="rotate(-0 89.1648 112.6305)">T (treatment)</text>
+   </g>
+   <g id="text_3">
+    <g id="patch_4">
+     <path d="M 344.3652 118.7955 
+L 398.9052 118.7955 
+L 398.9052 100.1565 
+L 344.3652 100.1565 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.6; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'Source Serif Pro', 'DejaVu Serif', serif; text-anchor: middle" x="371.6352" y="112.6305" transform="rotate(-0 371.6352 112.6305)">Y (outcome)</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_5">
+     <path d="M 200.906016 118.7955 
+L 259.893984 118.7955 
+L 259.893984 100.1565 
+L 200.906016 100.1565 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.6; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'Source Serif Pro', 'DejaVu Serif', serif; text-anchor: middle" x="230.4" y="112.6305" transform="rotate(-0 230.4 112.6305)">M (mediator)</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 211.37928 38.387744 
+Q 159.780885 68.400881 108.955636 97.964303 
+" style="fill: none; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 112.972527 97.710164 
+L 108.955636 97.964303 
+L 111.162459 94.598307 
+z
+" style="fill: #1f3a5f; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 249.42072 38.387744 
+Q 301.019115 68.400881 351.844364 97.964303 
+" style="fill: none; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 349.637541 94.598307 
+L 351.844364 97.964303 
+L 347.827473 97.710164 
+z
+" style="fill: #1f3a5f; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 111.168148 109.476 
+Q 159.782563 109.476 207.502551 109.476 
+" style="fill: none; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 203.902551 107.676 
+L 207.502551 109.476 
+L 203.902551 111.276 
+z
+" style="fill: #1f3a5f; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 252.403348 109.476 
+Q 301.017763 109.476 348.737751 109.476 
+" style="fill: none; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 345.137751 107.676 
+L 348.737751 109.476 
+L 345.137751 111.276 
+z
+" style="fill: #1f3a5f; stroke: #1f3a5f; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+  </g>
+ </g>
+</svg>

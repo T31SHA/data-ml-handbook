@@ -1,0 +1,2 @@
+DiD estimate = 1.221  (cluster-robust se 0.097; truth 1.2)
+leads: {'lead3': np.float64(-0.103), 'lead4': np.float64(0.043), 'lead5': np.float64(0.228)}
